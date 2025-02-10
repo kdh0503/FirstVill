@@ -34,6 +34,6 @@ fun AppNavigation(loginViewModel: LoginViewModel, mainViewModel: MainViewModel) 
     NavHost(navController, startDestination = "onboarding") {
         composable("login") { loginScreen(navController, loginViewModel) }
         composable("onboarding") { onBoardingScreen(navController, mainViewModel) }
-        composable("main") { mainScreen() }
+        composable("main") { mainScreen(mainViewModel) }
     }
 }
